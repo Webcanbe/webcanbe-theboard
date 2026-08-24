@@ -29,7 +29,7 @@
       const anchor = image.closest('a'); if (!anchor || anchor.querySelector('.operator-club-wordmark')) return;
       image.style.visibility = 'hidden'; anchor.style.position = 'relative';
       const wordmark = document.createElement('span'); wordmark.className = 'operator-club-wordmark'; wordmark.textContent = brand;
-      wordmark.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;color:#fff;font:700 clamp(11px,1.25vw,16px)/1 Inter,Arial,sans-serif;letter-spacing:-.06em;white-space:nowrap'; anchor.append(wordmark);
+      wordmark.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;color:#fff;font:700 clamp(7px,.7vw,10px)/1 Inter,Arial,sans-serif;letter-spacing:-.07em;white-space:nowrap'; anchor.append(wordmark);
     });
   }
   function links() { document.querySelectorAll('a[href]').forEach(anchor => { const href = anchor.getAttribute('href') || ''; if (/^(https?:)?\/\/(instagram|twitter|x|facebook|linkedin)\.com/i.test(href) || /framer\.com\/marketplace|buy\.polar|gumroad/i.test(href)) (anchor.closest('[data-framer-appear-id]') || anchor).remove(); if (/theboard|framer\.website/i.test(href)) anchor.removeAttribute('href'); }); }
